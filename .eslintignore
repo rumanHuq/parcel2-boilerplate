@@ -1,9 +1,6 @@
 node_modules
-src/Interfaces/gql-definitions.ts
 coverage
 .vscode
-.next
+dist/
 public
 cypress/**/**/*.js
-RestaurantSubpage
-bin

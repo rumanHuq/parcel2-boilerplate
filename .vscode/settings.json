@@ -21,6 +21,9 @@
   "[typescriptreact]": {
     "editor.formatOnSave": false,
   },
+  "[cjs]": {
+    "editor.formatOnSave": false,
+  },
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

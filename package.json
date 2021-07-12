@@ -50,7 +50,8 @@
   "name": "parcel-workspace",
   "scripts": {
     "build": "parcel build ./src/index.html",
-    "start": "parcel serve ./src/index.html"
+    "start": "parcel serve ./src/index.html",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix && stylelint 'src/**/*.{ts,tsx}' --fix"
   },
   "type": "module",
   "version": "1.0.0"

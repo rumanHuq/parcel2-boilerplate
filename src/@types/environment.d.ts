@@ -1,4 +1,3 @@
-
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
@@ -7,7 +6,8 @@ declare global {
     }
   }
   interface Window {
+    dummy: never;
   }
 }
 
-export { }
+export {};
