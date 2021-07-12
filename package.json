@@ -1,0 +1,57 @@
+{
+  "author": {
+    "email": "rumanbsl@gmail.com",
+    "name": "Ruman"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rxjs": "^7.2.0",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.0.0-beta.3.1",
+    "@parcel/transformer-typescript-tsc": "^2.0.0-beta.3.1",
+    "@parcel/ts-utils": "^2.0.0-beta.3.1",
+    "@parcel/validator-eslint": "^2.0.0-beta.3.1",
+    "@parcel/validator-typescript": "^2.0.0-beta.3.1",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.11",
+    "@typescript-eslint/eslint-plugin": "4.28.2",
+    "@typescript-eslint/parser": "4.28.2",
+    "eslint": "7.30.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-import-resolver-webpack": "^0.13.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-cypress": "2.11.3",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "parcel": "^2.0.0-beta.3.1",
+    "parcel-validator-stylelint": "^1.0.1",
+    "prettier": "2.3.2",
+    "stylelint": "13.13.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-sass-guidelines": "8.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-prettier": "1.2.0",
+    "stylelint-webpack-plugin": "2.2.2",
+    "typescript": "^4.3.5"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "parcel-workspace",
+  "scripts": {
+    "build": "parcel build ./src/index.html",
+    "start": "parcel serve ./src/index.html"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
