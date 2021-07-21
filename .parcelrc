@@ -11,8 +11,8 @@
     ],
     "*.{ts,tsx}": [
       "@parcel/validator-typescript",
-      "@parcel/validator-eslint",
-      "parcel-validator-stylelint"
+      "parcel-validator-stylelint",
+      "@parcel/validator-eslint"
     ]
   }
 }

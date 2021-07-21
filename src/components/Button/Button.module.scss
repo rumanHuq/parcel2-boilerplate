@@ -1,0 +1,14 @@
+.button {
+  all: initial;
+  color: var(--accent-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+}

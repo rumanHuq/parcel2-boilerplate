@@ -87,7 +87,7 @@ module.exports = {
   },
   extends: ["airbnb", "airbnb/hooks", "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking", "plugin:prettier/recommended"],
   parser: "@typescript-eslint/parser",
-  parserOptions: { project: "./tsconfig.json" },
+  parserOptions: { tsconfigRootDir: __dirname, project: "./tsconfig.json", extraFileExtensions: [".cjs"] },
   plugins: ["import"],
   settings: {
     "import/parsers": {

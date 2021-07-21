@@ -1,11 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-`;
+import React, { useState } from "react";
+import AppCss from "./App.module.scss";
+import { Button } from "./Button/Button";
 
 export function App() {
-  return <Wrapper>App!!!!</Wrapper>;
+  const [theme, setTheme] = useState(AppCss.light);
+
+  return (
+    <div className={[AppCss.App, theme].join(" ")}>
+      App!!
+      <Button onClick={(t: string) => setTheme(t)} />
+    </div>
+  );
 }

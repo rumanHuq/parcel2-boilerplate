@@ -1,24 +1,30 @@
 {
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ],
   "author": {
     "email": "rumanbsl@gmail.com",
     "name": "Ruman"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
+    "postcss-scss": "^2.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rxjs": "^7.2.0",
-    "styled-components": "^5.3.0"
+    "rxjs": "^7.2.0"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.0.0-beta.3.1",
+    "@parcel/transformer-sass": "^2.0.0-nightly.769",
     "@parcel/transformer-typescript-tsc": "^2.0.0-beta.3.1",
     "@parcel/ts-utils": "^2.0.0-beta.3.1",
     "@parcel/validator-eslint": "^2.0.0-beta.3.1",
     "@parcel/validator-typescript": "^2.0.0-beta.3.1",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
-    "@types/styled-components": "^5.1.11",
     "@typescript-eslint/eslint-plugin": "4.28.2",
     "@typescript-eslint/parser": "4.28.2",
     "eslint": "7.30.0",
@@ -34,24 +40,33 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
+    "flex-gap-polyfill": "^4.0.6",
     "parcel": "^2.0.0-beta.3.1",
     "parcel-validator-stylelint": "^1.0.1",
+    "postcss": "^8.3.5",
+    "postcss-aspect-ratio-property": "1.0.0",
+    "postcss-color-rebeccapurple": "6.0.0",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "postcss-preset-env": "6.7.0",
+    "postcss-values-parser": "5.0.0",
     "prettier": "2.3.2",
+    "sass": "^1.35.2",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-sass-guidelines": "8.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-prettier": "1.2.0",
     "stylelint-webpack-plugin": "2.2.2",
+    "typed-scss-modules": "^4.1.1",
     "typescript": "^4.3.5"
   },
   "license": "MIT",
-  "main": "index.js",
   "name": "parcel-workspace",
   "scripts": {
     "build": "parcel build ./src/index.html",
     "start": "parcel serve ./src/index.html",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix && stylelint 'src/**/*.{ts,tsx}' --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix && stylelint 'src/**/*.{ts,tsx}' --fix",
+    "typegen:scss": "tsm src -n=none"
   },
   "type": "module",
   "version": "1.0.0"

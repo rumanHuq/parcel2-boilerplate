@@ -1,0 +1,37 @@
+.App {
+  background-color: var(--global-background);
+  color: var(--global-foreground);
+  display: flex;
+  gap: 1rem;
+  height: 100vh;
+  transition: all 200ms;
+}
+
+.light {
+  --global-background: hsl(0 0% 100%);
+  --global-foreground: hsl(0 0% 0%);
+  --accent-color: hsl(0deg 100% 50%);
+}
+
+.dark {
+  --global-background: hsl(0 0% 0%);
+  --global-foreground: hsl(0 0% 100%);
+  --accent-color: hsl(226deg 100% 50%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
